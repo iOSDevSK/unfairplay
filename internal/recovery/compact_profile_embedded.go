@@ -39,7 +39,7 @@ func init() {
 	if err != nil {
 		panic(fmt.Sprintf("load embedded FairPlay CFG profile: %v", err))
 	}
-	expected := map[uint8]int{1: 1086, 2: 953, 3: 1656, 4: 315, 5: 315, 6: 315, 7: 315, 8: 315, 9: 315, 10: 1371}
+	expected := map[uint8]int{1: 1086, 2: 953, 3: 1656, 4: 315, 5: 315, 6: 315, 7: 315, 8: 315, 9: 315, 10: 58318}
 	if len(sections) != len(expected) {
 		panic("embedded FairPlay CFG profile has an invalid section count")
 	}

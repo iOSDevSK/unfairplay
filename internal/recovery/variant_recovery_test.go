@@ -185,7 +185,7 @@ func TestEmbeddedExecutionProfileGeometry(t *testing.T) {
 		profile.selectionFrameCall != 0x1002fbb24 || len(profile.onceTokens) != 4 {
 		t.Fatalf("unexpected embedded execution profile: %+v", profile)
 	}
-	if len(profile.accountEntryBlocks) != 1086 || len(profile.bootstrapBlocks) != 953 || len(profile.selectionBlocks) != 1656 || len(profile.supplementalBlocks) != 1371 {
+	if len(profile.accountEntryBlocks) != 1086 || len(profile.bootstrapBlocks) != 953 || len(profile.selectionBlocks) != 1656 || len(profile.supplementalBlocks) != 58318 {
 		t.Fatal("embedded execution profile has incomplete CFG maps")
 	}
 	model := &model{binaryHash: rawSourceBinaryHash}
